@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.name }}</title>
@@ -23,20 +24,24 @@
   <![endif]-->
 </head>
 
-<body {% if page.class %} class="{{ page.class }}"{% endif %}>
-<div class="container">
-  <div class="top">
-    <a id="logo" href="/">{{ site.name }}</a>
-  </div>
+<body {% if page.class %} class="{{ page.class }}" {% endif %}>
+  <div class="container">
+    <div class="top">
+      <a id="logo" href="/">{{ site.name }}</a>
+    </div>
 
-  <div class="navigation">
-    <li>
-      <a href="/about">about</a>
-    </li>
-    ::
-    <li>
-      <a href="/archives/">archives</a>
-    </li>
-  </div>
+    <div class="navigation">
+      <li>
+        <a href="/about">about</a>
+      </li>
+      <small>::</small>
+      <li>
+        <a href="/archives/">archives</a>
+      </li>
+      <small>::</small>
+      <li>
+        <a href="/newsletter/">newsletter</a>
+      </li>
+    </div>
 
-  <div class="body">
+    <div class="body">
